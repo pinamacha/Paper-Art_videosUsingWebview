@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Party-Rock.xcodeproj">
+      location = "self:/Users/ravipinamacha/Desktop/ios/udemyApps/swift3/Party-Rock/Paper-Art.xcodeproj">
    </FileRef>
 </Workspace>

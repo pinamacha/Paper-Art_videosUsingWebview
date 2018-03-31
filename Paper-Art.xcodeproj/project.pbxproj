@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		65D092F11F324A8E004483DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D092F01F324A8E004483DB /* AppDelegate.swift */; };
-		65D092F31F324A8E004483DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D092F21F324A8E004483DB /* ViewController.swift */; };
+		65D092F31F324A8E004483DB /* MainVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D092F21F324A8E004483DB /* MainVc.swift */; };
 		65D092F61F324A8E004483DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65D092F41F324A8E004483DB /* Main.storyboard */; };
 		65D092F81F324A8E004483DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65D092F71F324A8E004483DB /* Assets.xcassets */; };
 		65D092FB1F324A8E004483DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65D092F91F324A8E004483DB /* LaunchScreen.storyboard */; };
+		65D093051F3252AD004483DB /* High Tide - Demo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 65D093041F3252AD004483DB /* High Tide - Demo.ttf */; };
+		65D093071F32539B004483DB /* VideoVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D093061F32539B004483DB /* VideoVc.swift */; };
+		65D0930D1F3256B5004483DB /* PaperArtCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0930C1F3256B5004483DB /* PaperArtCell.swift */; };
+		65D0930F1F3257BE004483DB /* PaperArt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0930E1F3257BE004483DB /* PaperArt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		65D092ED1F324A8E004483DB /* Party-Rock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Party-Rock.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		65D092ED1F324A8E004483DB /* Paper-Art.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Paper-Art.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65D092F01F324A8E004483DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		65D092F21F324A8E004483DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		65D092F21F324A8E004483DB /* MainVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVc.swift; sourceTree = "<group>"; };
 		65D092F51F324A8E004483DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		65D092F71F324A8E004483DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65D092FA1F324A8E004483DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		65D092FC1F324A8E004483DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65D093041F3252AD004483DB /* High Tide - Demo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "High Tide - Demo.ttf"; sourceTree = "<group>"; };
+		65D093061F32539B004483DB /* VideoVc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoVc.swift; sourceTree = "<group>"; };
+		65D0930C1F3256B5004483DB /* PaperArtCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PaperArtCell.swift; path = ../PaperArtCell.swift; sourceTree = "<group>"; };
+		65D0930E1F3257BE004483DB /* PaperArt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaperArt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +46,7 @@
 		65D092E41F324A8E004483DB = {
 			isa = PBXGroup;
 			children = (
-				65D092EF1F324A8E004483DB /* Party-Rock */,
+				65D092EF1F324A8E004483DB /* Paper-Art */,
 				65D092EE1F324A8E004483DB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,30 +54,68 @@
 		65D092EE1F324A8E004483DB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				65D092ED1F324A8E004483DB /* Party-Rock.app */,
+				65D092ED1F324A8E004483DB /* Paper-Art.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		65D092EF1F324A8E004483DB /* Party-Rock */ = {
+		65D092EF1F324A8E004483DB /* Paper-Art */ = {
 			isa = PBXGroup;
 			children = (
+				65D0930B1F325444004483DB /* Fonts */,
+				65D093081F3253AF004483DB /* Model */,
+				65D093091F3253BA004483DB /* View */,
+				65D0930A1F325401004483DB /* Controller */,
 				65D092F01F324A8E004483DB /* AppDelegate.swift */,
-				65D092F21F324A8E004483DB /* ViewController.swift */,
-				65D092F41F324A8E004483DB /* Main.storyboard */,
 				65D092F71F324A8E004483DB /* Assets.xcassets */,
-				65D092F91F324A8E004483DB /* LaunchScreen.storyboard */,
 				65D092FC1F324A8E004483DB /* Info.plist */,
 			);
+			name = "Paper-Art";
 			path = "Party-Rock";
+			sourceTree = "<group>";
+		};
+		65D093081F3253AF004483DB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				65D0930E1F3257BE004483DB /* PaperArt.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		65D093091F3253BA004483DB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				65D092F41F324A8E004483DB /* Main.storyboard */,
+				65D092F91F324A8E004483DB /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		65D0930A1F325401004483DB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				65D0930C1F3256B5004483DB /* PaperArtCell.swift */,
+				65D092F21F324A8E004483DB /* MainVc.swift */,
+				65D093061F32539B004483DB /* VideoVc.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		65D0930B1F325444004483DB /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				65D093041F3252AD004483DB /* High Tide - Demo.ttf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		65D092EC1F324A8E004483DB /* Party-Rock */ = {
+		65D092EC1F324A8E004483DB /* Paper-Art */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 65D092FF1F324A8E004483DB /* Build configuration list for PBXNativeTarget "Party-Rock" */;
+			buildConfigurationList = 65D092FF1F324A8E004483DB /* Build configuration list for PBXNativeTarget "Paper-Art" */;
 			buildPhases = (
 				65D092E91F324A8E004483DB /* Sources */,
 				65D092EA1F324A8E004483DB /* Frameworks */,
@@ -79,9 +125,9 @@
 			);
 			dependencies = (
 			);
-			name = "Party-Rock";
+			name = "Paper-Art";
 			productName = "Party-Rock";
-			productReference = 65D092ED1F324A8E004483DB /* Party-Rock.app */;
+			productReference = 65D092ED1F324A8E004483DB /* Paper-Art.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -101,7 +147,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 65D092E81F324A8E004483DB /* Build configuration list for PBXProject "Party-Rock" */;
+			buildConfigurationList = 65D092E81F324A8E004483DB /* Build configuration list for PBXProject "Paper-Art" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -114,7 +160,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				65D092EC1F324A8E004483DB /* Party-Rock */,
+				65D092EC1F324A8E004483DB /* Paper-Art */,
 			);
 		};
 /* End PBXProject section */
@@ -124,6 +170,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65D093051F3252AD004483DB /* High Tide - Demo.ttf in Resources */,
 				65D092FB1F324A8E004483DB /* LaunchScreen.storyboard in Resources */,
 				65D092F81F324A8E004483DB /* Assets.xcassets in Resources */,
 				65D092F61F324A8E004483DB /* Main.storyboard in Resources */,
@@ -137,8 +184,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65D092F31F324A8E004483DB /* ViewController.swift in Sources */,
+				65D092F31F324A8E004483DB /* MainVc.swift in Sources */,
 				65D092F11F324A8E004483DB /* AppDelegate.swift in Sources */,
+				65D0930F1F3257BE004483DB /* PaperArt.swift in Sources */,
+				65D0930D1F3256B5004483DB /* PaperArtCell.swift in Sources */,
+				65D093071F32539B004483DB /* VideoVc.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,6 +201,7 @@
 				65D092F51F324A8E004483DB /* Base */,
 			);
 			name = Main.storyboard;
+			path = "Party-Rock";
 			sourceTree = "<group>";
 		};
 		65D092F91F324A8E004483DB /* LaunchScreen.storyboard */ = {
@@ -159,6 +210,7 @@
 				65D092FA1F324A8E004483DB /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = "Party-Rock";
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -266,7 +318,7 @@
 				DEVELOPMENT_TEAM = 6EZM43FG2R;
 				INFOPLIST_FILE = "Party-Rock/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.iosapps.Party-Rock";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iosapps.Paper-Art";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -279,7 +331,7 @@
 				DEVELOPMENT_TEAM = 6EZM43FG2R;
 				INFOPLIST_FILE = "Party-Rock/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.iosapps.Party-Rock";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iosapps.Paper-Art";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -288,7 +340,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		65D092E81F324A8E004483DB /* Build configuration list for PBXProject "Party-Rock" */ = {
+		65D092E81F324A8E004483DB /* Build configuration list for PBXProject "Paper-Art" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				65D092FD1F324A8E004483DB /* Debug */,
@@ -297,13 +349,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		65D092FF1F324A8E004483DB /* Build configuration list for PBXNativeTarget "Party-Rock" */ = {
+		65D092FF1F324A8E004483DB /* Build configuration list for PBXNativeTarget "Paper-Art" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				65D093001F324A8E004483DB /* Debug */,
 				65D093011F324A8E004483DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
